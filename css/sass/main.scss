@@ -1,0 +1,80 @@
+// main sass stylesheet
+
+@import 'helpers/variables';
+
+@import 'helpers/mixins';
+
+@import 'helpers/placeholders';
+
+@import 'base/reset';
+
+@import 'base/typography';
+
+@import 'base/grid';
+
+@import 'components/buttons';
+
+@import 'components/navigation';
+
+@import 'components/module';
+
+@import 'components/option-button';
+
+@import 'components/floating-button';
+
+@import 'components/articles';
+
+@import 'layout/footer';
+
+@import 'layout/header';
+
+@import 'layout/forms';
+
+@import 'layout/sidebar';
+
+@import 'pages/home';
+
+// Basic
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+	font-size: 16px;
+}
+
+// Links
+	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+
+// Lists
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+	

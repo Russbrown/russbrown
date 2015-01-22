@@ -1,0 +1,32 @@
+// article
+
+article {
+	a {
+		text-decoration: none;		
+	}
+}
+
+.home-post {
+	padding: 2em 1em;
+
+	.article__title {
+		margin-bottom: 1em;
+	}
+
+	.article__content p {
+		margin: 1em 0;
+	}
+}
+
+.home-post:first-child {
+	background: $primaryColor;
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
+
+	.article__content {
+		font-weight: 300;
+	}
+}

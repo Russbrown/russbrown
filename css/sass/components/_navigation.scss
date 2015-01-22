@@ -1,0 +1,162 @@
+// Navigation
+
+.menu-icon-wrapper {
+  display: block;
+  width: 50px;
+  height: 45px;
+  background: $green;
+  cursor: pointer;
+  position: absolute;
+  top: 111px;
+
+  .menu-icon {
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    height: auto;
+    float: none;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    top: 6px;
+    left: 10px;
+
+    div {
+      width: 100%;
+      margin-top: 5px;
+      border: 1px solid white;
+      background: white;
+      float: left;
+      position: relative;
+      clear: both;
+      -webkit-transition: all, 1s;
+      -moz-transition: all, 1s;
+      -ms-transition: all, 1s;
+      -o-transition: all, 1s;
+      transition: all, 1s;
+    }
+
+    #barOne,
+    #barTwo,
+    #barThree {
+      -webkit-transition: all, 1s;
+      -moz-transition: all, 1s;
+      -ms-transition: all, 1s;
+      -o-transition: all, 1s;
+      transition: all, 1s;
+      position: relative;
+      border: solid 2px white;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;        
+    }
+
+    .left {
+      -webkit-transform: rotate(48deg);
+      -moz-transform: rotate(48deg);
+      -ms-transform: rotate(48deg);
+      -o-transform: rotate(48deg);
+      transform: rotate(48deg);
+      -webkit-transition: all, 0.5s;
+      -moz-transition: all, 0.5s;
+      -ms-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      transition: all, 0.5s;
+      border: solid 1px white;
+      top: 19px !important;
+    }
+    .right {
+      -webkit-transform: rotate(-2028deg);
+      -moz-transform: rotate(-2028deg);
+      -ms-transform: rotate(-2028deg);
+      -o-transform: rotate(-2028deg);
+      transform: rotate(-2028deg);
+      -webkit-transition: all, 0.15s;
+      -moz-transition: all, 0.15s;
+      -ms-transition: all, 0.15s;
+      -o-transition: all, 0.15s;
+      transition: all, 0.15s;
+      left: 0px !important;
+      border: solid 1px white;
+      top: -9px !important;
+    }
+    .down {
+      -webkit-transform: rotate(-1080deg);
+      -moz-transform: rotate(-1080deg);
+      -ms-transform: rotate(-1080deg);
+      -o-transform: rotate(-1080deg);
+      transform: rotate(-1080deg);
+      -webkit-transition: all, 0.5s;
+      -moz-transition: all, 0.5s;
+      -ms-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      transition: all, 0.5s;
+      opacity: 0;
+    }
+  }
+
+}
+
+.menu.hidden {
+  position: absolute;
+  left: -15%;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -ms-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.menu {
+  width: 15%;
+  left: 0px;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -ms-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+
+  li {
+    font-size: 1em;
+    width: 100%;
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    text-indent: .75em;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background: #fafafa;
+  }
+
+  .current {
+    position: relative;
+    width: 99%;
+    background: #fafafa;
+  }
+
+  .current:before {
+    left: 0%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: $green;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+
+  .subheader {
+    font-size: 1.2em;
+    color: #333;
+    text-indent: 0;
+  }
+}
+

@@ -1,0 +1,18 @@
+// option button module
+
+.option-button {
+	text-decoration: none;
+	padding: 2em;
+
+	.option-button__label {
+		text-align: center;
+		padding-top: 0.5em;
+	}
+
+	.option-button__icon {
+		display: block;
+		text-align: center;
+		font-size: 3em;
+		color: #333;
+	}
+}

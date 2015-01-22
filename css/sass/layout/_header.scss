@@ -1,0 +1,49 @@
+// header
+
+.header {
+	padding: 1em;
+  	background: $darkPrimaryColor;
+   	@extend %shadow-level1;
+}
+
+.header__title {
+	display: inline-block;
+	color: #fff;
+}
+
+.header__menu-icon {
+	float: left;
+	font-size: 1.375em;
+  	line-height: 1.13636364;
+	color: #fff;
+	padding-right: .4em;
+}
+
+@media (min-width: 43.75em) {
+  .header__menu-icon {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .header__menu-icon {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+.header__floating-button__one {
+	top: 60%;
+	right: 1em;
+}
+.header__floating-button__two {
+	top: 60%;
+	right: 5em;	
+}
+.header__floating-button__three {
+	top: 60%;
+	right: 9em;
+}

@@ -1,0 +1,26 @@
+// floating buttons
+
+.has-floating-buttons {
+	position: relative;
+}
+
+.floating-button {
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background: $primaryColor;
+	text-decoration: none;
+	@extend %shadow-level2;
+}
+
+.floating-button__icon {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
