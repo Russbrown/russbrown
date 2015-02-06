@@ -23,20 +23,15 @@
 <div id="page" class="hfeed site">
 
     <header class="header has-floating-buttons" role="banner">
-        <i class="header__menu-icon fa fa-bars"></i>
         <h3 class="header__title">Russ Brown</h3>
 
-        <a href="#" class="floating-button header__floating-button__one">
-            <i class="floating-button__icon fa fa-binoculars"></i>
+        <a href="/links" class="floating-button header__floating-button__one">
+            <i class="floating-button__icon fa fa-list-ul"></i>
         </a>
 
-        <a href="#" class="floating-button header__floating-button__two">
+        <a href="/contact" class="floating-button header__floating-button__two">
             <i class="floating-button__icon fa fa-envelope"></i>
         </a>
-
-        <a href="#" class="floating-button header__floating-button__three">
-            <i class="floating-button__icon fa fa-area-chart"></i>
-        </a> 
     </header>  
 
 	<div id="content" class="site-content">
