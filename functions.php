@@ -112,6 +112,44 @@ function russbrown_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'russbrown_scripts' );
 
+
+/**
+* Create our custom post types
+*/
+function my_custom_post_link() {
+  $labels = array(
+    'name'               => _x( 'links', 'post type general name' ),
+    'singular_name'      => _x( 'link', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'link' ),
+    'add_new_item'       => __( 'Add New link' ),
+    'edit_item'          => __( 'Edit link' ),
+    'new_item'           => __( 'New link' ),
+    'all_items'          => __( 'All links' ),
+    'view_item'          => __( 'View link' ),
+    'search_items'       => __( 'Search links' ),
+    'not_found'          => __( 'No links found' ),
+    'not_found_in_trash' => __( 'No links found in the Trash' ), 
+    'parent'             => __( 'Parent'),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'links'
+  );
+  $args = array(
+    'labels'        => $labels,
+    'description'   => 'Holds our links and link specific data',
+    'menu_icon' => 'dashicons-groups',
+    'public'        => true,
+    'menu_position' => 5,
+    'hierarchical'  => true,
+    'taxonomies' => array('category'), 
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'page-attributes' ),
+    'has_archive'   => true,
+    'map_meta_cap' => true
+  );
+  register_post_type( 'link', $args ); 
+}
+add_action( 'init', 'my_custom_post_link' );
+
+
 /**
  * Implement the Custom Header feature.
  */

@@ -1,0 +1,51 @@
+// links
+
+.link-post {
+
+	.link__title {
+		margin-bottom: .5em;
+	}
+
+	.link__content p {
+		margin: 1em 0;
+	}
+}
+
+.link-post:first-child {
+	background: $primaryColor;
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
+
+	.link__content {
+		font-weight: 300;
+	}
+}
+
+.link-post:nth-child(2) {
+	background: lighten($primaryColor, 15%);
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
+
+	.link__content {
+		font-weight: 300;
+	}
+}
+
+.link-post:nth-child(3) {
+	background: lighten($primaryColor, 25%);
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
+
+	.link__content {
+		font-weight: 300;
+	}
+}

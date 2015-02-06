@@ -1,13 +1,14 @@
 // article
 
 article {
+	padding: 2em 1em;
+	
 	a {
 		text-decoration: none;		
 	}
 }
 
 .home-post {
-	padding: 2em 1em;
 
 	.article__title {
 		margin-bottom: 1em;
