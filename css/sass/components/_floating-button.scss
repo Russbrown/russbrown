@@ -18,9 +18,8 @@
 .floating-button__icon {
 	display: block;
 	text-align: center;
-	vertical-align: middle;
+	padding-top: 0px;
 	color: #fff;
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 35%;
 }
