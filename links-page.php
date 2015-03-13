@@ -6,6 +6,7 @@ Template Name: Links Page
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<h3 class="section-header"> Reading </h3>
 		<main id="main" class="site-main" role="main">
 
 		<?php $loop = new WP_Query( array( 'post_type' => 'link', 'posts_per_page' => -1 ) ); ?>
