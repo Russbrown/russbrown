@@ -23,7 +23,7 @@
 <div id="page" class="hfeed site">
 
     <header class="header has-floating-buttons" role="banner">
-        <h3 class="header__title">Russ Brown</h3>
+        <h3 class="header__title"><a href="/">Russ Brown</a></h3>
 
         <a href="/links" class="floating-button header__floating-button__one">
             <i class="floating-button__icon fa fa-list-ul"></i>

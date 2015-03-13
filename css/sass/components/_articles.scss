@@ -3,19 +3,42 @@
 article {
 	padding: 2em 1em;
 	
+	
 	a {
 		text-decoration: none;		
 	}
 }
 
+@media screen and (min-width: 700px) {
+	article {
+
+		padding: 4em 2em;
+
+		p {
+			font-size: 1.8em;
+			line-height: 1.6em;
+		}
+
+	}
+}
+
 .home-post {
+	position: relative;
 
 	.article__title {
 		margin-bottom: 1em;
 	}
 
+	.timeline {
+		width: 4em;
+		height: 100%;
+		position: absolute;
+		padding: 15px;
+	}
+
 	.article__content p {
 		margin: 1em 0;
+		padding-left: 5em;
 	}
 }
 
@@ -23,7 +46,42 @@ article {
 	background: $primaryColor;
 	color: #fff;
 
-	a {
+	h1 {
+		color: #fff;
+		margin-top: .5em;
+	}
+
+	.timeline {
+		background: linear-gradient(to bottom, $primaryColor 0%,lighten($primaryColor, 10%) 60%); /* W3C */
+	}
+
+	.article__content {
+		font-weight: 300;
+	}
+}
+
+.home-post:nth-child(2) {
+	background: lighten($primaryColor, 10%);
+	color: #fff;
+
+	h1 {
+		color: #fff;
+	}
+
+	.timeline {
+		background: linear-gradient(to bottom, lighten($primaryColor, 10%) 0%,lighten($primaryColor, 18%) 60%); /* W3C */
+	}
+
+	.article__content {
+		font-weight: 300;
+	}
+}
+
+.home-post:nth-child(3) {
+	background: lighten($primaryColor, 18%);
+	color: #fff;
+
+	h1 {
 		color: #fff;
 	}
 

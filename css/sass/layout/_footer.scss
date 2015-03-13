@@ -3,3 +3,9 @@
 .site-footer {
 	padding: 2em 1em;
 }
+
+@media (min-width: 43.75em) {
+	.site-footer {
+		padding: 4em 2em;
+	}
+}
