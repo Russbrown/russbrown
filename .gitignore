@@ -1,0 +1,6 @@
+node_modules
+.htaccess
+css/sass/*
+gulpfile.js
+package.json
+Gruntfile.js
