@@ -102,7 +102,7 @@ add_action( 'widgets_init', 'russbrown_widgets_init' );
 function russbrown_scripts() {
 	wp_enqueue_style( 'russbrown-style', get_stylesheet_directory_uri() . '/css/main.css' );
 
-	wp_enqueue_script( 'russbrown-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'russbrown-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'russbrown-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -148,6 +148,40 @@ function my_custom_post_link() {
   register_post_type( 'link', $args ); 
 }
 add_action( 'init', 'my_custom_post_link' );
+
+
+function my_custom_post_portfolio() {
+  $labels = array(
+    'name'               => _x( 'portfolio', 'post type general name' ),
+    'singular_name'      => _x( 'portfolio', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'portfolio' ),
+    'add_new_item'       => __( 'Add New portfolio' ),
+    'edit_item'          => __( 'Edit portfolio' ),
+    'new_item'           => __( 'New portfolio' ),
+    'all_items'          => __( 'All portfolio' ),
+    'view_item'          => __( 'View portfolio' ),
+    'search_items'       => __( 'Search portfolio' ),
+    'not_found'          => __( 'No portfolio found' ),
+    'not_found_in_trash' => __( 'No portfolio found in the Trash' ), 
+    'parent'             => __( 'Parent'),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'portfolio'
+  );
+  $args = array(
+    'labels'        => $labels,
+    'description'   => 'Holds our portfolio and portfolio specific data',
+    'menu_icon' => 'dashicons-groups',
+    'public'        => true,
+    'menu_position' => 5,
+    'hierarchical'  => true,
+    'taxonomies' => array('category'), 
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'page-attributes' ),
+    'has_archive'   => true,
+    'map_meta_cap' => true
+  );
+  register_post_type( 'portfolio', $args ); 
+}
+add_action( 'init', 'my_custom_post_portfolio' );
 
 
 /**

@@ -39,6 +39,7 @@ article {
 	.article__content p {
 		margin: 1em 0;
 		padding-left: 5em;
+		padding-right: 1em;
 	}
 }
 
@@ -48,11 +49,11 @@ article {
 
 	h1 {
 		color: #fff;
-		margin-top: .5em;
+		margin-top: 1em;
 	}
 
 	.timeline {
-		background: linear-gradient(to bottom, $primaryColor 0%,lighten($primaryColor, 10%) 60%); /* W3C */
+		background: linear-gradient(to bottom, $primaryColor 0%,#41a02d 65%); /* W3C */
 	}
 
 	.article__content {
@@ -61,7 +62,7 @@ article {
 }
 
 .home-post:nth-child(2) {
-	background: lighten($primaryColor, 10%);
+	background: #41a02d;
 	color: #fff;
 
 	h1 {
@@ -69,7 +70,7 @@ article {
 	}
 
 	.timeline {
-		background: linear-gradient(to bottom, lighten($primaryColor, 10%) 0%,lighten($primaryColor, 18%) 60%); /* W3C */
+		background: linear-gradient(to bottom, #41a02d 0%,#eb008c 65%); /* W3C */
 	}
 
 	.article__content {
@@ -78,7 +79,7 @@ article {
 }
 
 .home-post:nth-child(3) {
-	background: lighten($primaryColor, 18%);
+	background: #eb008c;
 	color: #fff;
 
 	h1 {
@@ -87,5 +88,81 @@ article {
 
 	.article__content {
 		font-weight: 300;
+	}
+}
+
+
+
+
+
+/* Article Panels 
+**************************************/
+
+.portfolio-post .article__content .panel {;
+	display: none;
+	height: 280px;
+}
+
+.portfolio-post .article__content .isActive.panel {
+	display: block;
+}
+
+
+
+
+/* Portfolio posts
+**************************************/
+
+.portfolio-post {
+	background: #eee;
+	border-bottom: 3px solid #ddd;
+	position: relative;
+
+	.article__title {
+		margin-bottom: 1em;
+	}
+
+	.article__content {
+		padding-right: 9em;
+		
+		img {
+			float: left;
+			width: 450px;
+			height: auto;
+			margin-right: 40px;
+		}
+	}
+
+	.article__button {
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		position: absolute;
+		top: 40%;
+		right: 80px;
+		margin-top: -50px;
+		@extend %shadow-level2;
+
+		i {
+			font-size: 2.2em;
+			color: #fff;
+			padding-left: 2px;
+		}
+	}
+
+	.article__button:active,
+	.article__button:focus {
+		outline: none;
+	}
+}
+
+.portfolio-post:first-child {
+
+	.article__title {
+		margin-top: 1em;
+	}
+
+	.article__button {
+		top: 46%;
 	}
 }

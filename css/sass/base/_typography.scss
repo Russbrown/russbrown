@@ -131,8 +131,27 @@ blockquote {
 
 .section-header {
   position: absolute;
+  top: 4.75em;
   padding: .25em 1.1em;
   background: rgba(255,255,255, 0.5);
   z-index: 1;
   color: #fff;
 }
+
+.section-header--portfolio {
+  color: #333;
+}
+
+@media (max-width: 56.25em) {
+  .section-header {
+    top: 5.25em;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .section-header {
+    top: 3.5em;
+  } 
+}
+
+
